@@ -2,6 +2,9 @@
 using Prism;
 using Prism.Ioc;
 using UIKit;
+using Unity;
+using System.Collections.Generic;
+using Apollo.iOS;
 
 
 namespace Apollo.iOS
@@ -22,17 +25,31 @@ namespace Apollo.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App(new iOSInitializer()));
+            LoadApplication(new App(new IOsInitializer()));
 
             return base.FinishedLaunching(app, options);
         }
     }
 
-    public class iOSInitializer : IPlatformInitializer
+    public class IOsInitializer : IPlatformInitializer
     {
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
         public void RegisterTypes(IContainerRegistry container)
         {
+        }
 
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }
