@@ -11,9 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="ApolloQL">
-      <HintPath>..\..\..\ApolloQL\ApolloQL\ApolloQL\obj\Debug\ApolloQL.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.1\Microsoft.CSharp.dll</HintPath>
     </Reference>
@@ -23,6 +20,10 @@
     <EmbeddedResource Update="Views\Inicio.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Librerias\" />
   </ItemGroup>
 
 </Project>
