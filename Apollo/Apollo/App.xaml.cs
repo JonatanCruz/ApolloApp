@@ -1,6 +1,5 @@
 ﻿using Prism;
 using Prism.Ioc;
-using Apollo.ViewModels;
 using Apollo.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -18,7 +17,7 @@ namespace Apollo
          */
         public App() : this(null) { }
 
-        public App(IPlatformInitializer initializer) : base(initializer) { }
+        public App(IPlatformInitializer initializer = null) : base(initializer) { }
 
         protected override async void OnInitialized()
         {
@@ -31,6 +30,6 @@ namespace Apollo
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
-        }
+            containerRegistry.RegisterForNavigation<Inicio>();        }
     }
 }
