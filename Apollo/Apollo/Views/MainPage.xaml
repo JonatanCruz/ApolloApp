@@ -5,6 +5,7 @@
              Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label>Hola Mundo</Label>
     </StackLayout>
     
     
