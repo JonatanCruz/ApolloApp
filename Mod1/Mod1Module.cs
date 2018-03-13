@@ -18,7 +18,7 @@ namespace Mod1
     {
         public void Initialize() { /* deprecated */ }
 
-        public void OnInitialized()
+        public void OnInitialized(IContainerProvider containerProvider)
         {
             
         }

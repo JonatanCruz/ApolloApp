@@ -4,6 +4,7 @@ using Apollo.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Prism.Unity;
+using Prism.Modularity;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Apollo
@@ -30,6 +31,12 @@ namespace Apollo
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
-            containerRegistry.RegisterForNavigation<Inicio>();        }
+            containerRegistry.RegisterForNavigation<Inicio>();
+        }
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            moduleCatalog.AddModule<Mod1.Mod1Module>();
+        }
     }
 }
