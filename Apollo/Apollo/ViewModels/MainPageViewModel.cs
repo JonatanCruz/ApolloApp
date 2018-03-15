@@ -21,7 +21,7 @@ namespace Apollo.ViewModels
             : base (navigationService)
         {
             Title = "Main Page";
-            Nombre = "Miguel";
+            Nombre = "Hola Miguel";
         }
     }
 }

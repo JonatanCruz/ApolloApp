@@ -23,7 +23,7 @@ namespace Apollo
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("Inicio");
+            await NavigationService.NavigateAsync("NavigationPage/MainPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
